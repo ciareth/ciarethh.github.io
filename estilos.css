@@ -1,0 +1,136 @@
+/* Estilos generales */
+body {
+    background-color: dimgray;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    color: white;
+    padding: 20px;
+}
+
+h1, h3, h4, h5 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav {
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 10px;
+}
+
+nav h1 {
+    background-color: antiquewhite;
+    padding: 10px;
+    text-align: center;
+    color: black;
+}
+
+nav a {
+    text-decoration: none;
+    text-align: center;
+    background-color: antiquewhite;
+    margin: 2%;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+}
+
+nav a:hover {
+    border-bottom: 2px solid dimgray;
+    padding-bottom: 3px;
+    margin-bottom: 20px;
+}
+
+#DATOS {
+    padding: 20px;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor img {
+    max-width: 150px;
+    margin-right: 20px;
+    border-radius: 10%;
+    padding: 2px;
+}
+
+.informacion {
+    flex: 1;
+}
+
+#contacto a {
+    color: cornsilk;
+    text-decoration: none;
+}
+
+#contacto a:hover {
+    border-bottom: 2px solid antiquewhite;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: antiquewhite;
+    color: black;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+h3 {
+    border-bottom: 2px solid antiquewhite;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Media Queries para adaptabilidad */
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+    .informacion {
+        text-align: center;
+        padding: 10px;
+    }
+
+    section {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        font-size: 14px;
+    }
+
+    .informacion ul {
+        padding: 0;
+        list-style: none;
+    }
+
+    .informacion ul li {
+        padding: 5px 0;
+    }
+}
